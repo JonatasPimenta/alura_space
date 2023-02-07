@@ -1,1 +1,1 @@
-web: gunicorn alura-space.wsgi --log-file -
+web: gunicorn setup.wsgi --log-file -
