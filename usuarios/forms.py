@@ -7,8 +7,8 @@ class LoginForms(forms.Form):
         max_length=100,
         widget=forms.TextInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Ex.: João Silva"
+                'class': 'form-control',
+                'placeholder': 'Ex.: João Silva',
             }
         )
     )
@@ -18,10 +18,10 @@ class LoginForms(forms.Form):
         max_length=70,
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Digite sua senha"
+                'class': 'form-control',
+                'placeholder': 'Digite a sua senha',
             }
-        )
+        ),
     )
 
 class CadastroForms(forms.Form):
@@ -31,19 +31,19 @@ class CadastroForms(forms.Form):
         max_length=100,
         widget=forms.TextInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Ex.: João Silva"
+                'class': 'form-control',
+                'placeholder': 'Ex.: João Silva',
             }
         )
     )
     email=forms.EmailField(
-        label='Email', 
-        required=True, 
+        label='Email',
+        required=True,
         max_length=100,
         widget=forms.EmailInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Ex.: joãosilva@xpto.com"
+                'class': 'form-control',
+                'placeholder': 'Ex.: joaosilva@xpto.com',
             }
         )
     )
@@ -53,21 +53,21 @@ class CadastroForms(forms.Form):
         max_length=70,
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Digite sua senha"
+                'class': 'form-control',
+                'placeholder': 'Digite a sua senha',
             }
-        )
+        ),
     )
     senha_2=forms.CharField(
-        label='Confirme sua senha', 
+        label='Confirme a sua senha', 
         required=True, 
         max_length=70,
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control",
-                "placeholder": "Digite sua senha novamente"
+                'class': 'form-control',
+                'placeholder': 'Digite a sua senha novamente',
             }
-        )
+        ),
     )
 
     def clean_nome_cadastro(self):
