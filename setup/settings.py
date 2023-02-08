@@ -80,10 +80,21 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mar38483_alura_space_db',
+        'PORT': '3306',
+        'HOST': 'marciochopp.com',
+        'USER': 'mar38483_upadrao',
+        'PASSWORD': 'jpiment@77',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 # Password validation
